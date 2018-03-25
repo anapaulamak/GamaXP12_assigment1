@@ -1,4 +1,3 @@
-
 function validaNome(nome){
 	console.log(nome);
 	if (nome.match(/[A-z][A-z]+\ [A-z][A-z]+/) == null){
@@ -27,8 +26,6 @@ function validaEmpresa(empresa){
 	}
 }
 
-
-
 let btnEnviaForm = document.querySelector("#btn_enviaForm");
 btnEnviaForm.addEventListener("click", function(event){
 	
@@ -40,9 +37,9 @@ btnEnviaForm.addEventListener("click", function(event){
 	let empresa = form.empresa.value;
 
 	//teste para ver se está funcionando
-	console.log(nome);
-	console.log(email);
-	console.log(empresa);
+	//console.log(nome);
+	//console.log(email);
+	//console.log(empresa);
 
 	if (validaNome(nome) == true && validaEmail(email) == true && validaEmpresa(empresa) == true){
 		//insere do documento de persistencia!! rs
