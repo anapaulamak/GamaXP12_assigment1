@@ -1,0 +1,25 @@
+#menu{
+	display: flex;
+	justify-content: space-around;
+}
+
+.menuItem{
+	text-decoration: none;
+	font-size: 1.5em;
+	font-family: Arial;
+	padding: 10px;
+}
+
+.titleSection{
+	font-size: 2em;
+	font-family: Arial;
+}
+
+.itensForm{
+ 	display: flex;
+ 	padding: 10px;
+}
+
+.image1{
+	size: 50px;
+}
