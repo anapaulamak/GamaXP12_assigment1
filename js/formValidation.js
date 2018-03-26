@@ -1,7 +1,7 @@
 function validaNome(nome){
 	console.log(nome);
 	if (nome.match(/[A-z][A-z]+\ [A-z][A-z]+/) == null){
-		console.log("Nome Completo Inválido!");		
+		alert("Nome Completo Inválido!");		
 		return false;
 	}else{
 		return true;
@@ -9,8 +9,8 @@ function validaNome(nome){
 }	
 
 function validaEmail(email){
-	if( email ==""){
-		console.log( "Email Inválido!" );	
+	if( email.match(/^[a-z0-9.]+@[a-z0-9]+\.([a-z]+)?$/i) == null){
+		alert( "Email Inválido!" );	
 		return false;
 	}else{
 		return true;
@@ -18,8 +18,8 @@ function validaEmail(email){
 }
 
 function validaEmpresa(empresa){
-	if (empresa  == ""){
-		console.log("Empresa inválida!");
+	if (empresa == ""){
+		alert("Empresa inválida!");
 		return false;
 	}else{
 		return true;
@@ -36,13 +36,10 @@ btnEnviaForm.addEventListener("click", function(event){
 	let email =	form.email.value;
 	let empresa = form.empresa.value;
 
-	//teste para ver se está funcionando
-	//console.log(nome);
-	//console.log(email);
-	//console.log(empresa);
-
 	if (validaNome(nome) == true && validaEmail(email) == true && validaEmpresa(empresa) == true){
-		//insere do documento de persistencia!! rs
 		alert("Cadastro realizado com sucesso!");
+		form.nome.value = "";
+		form.email.value= "";
+		form.empresa.value= "";
 	}
 })

@@ -26,14 +26,15 @@ function setup(){
 };
 
 function submitData(){
-  var data1 = {
-    nome: infoNome.value,
-    email: infoEmail.value,
-    empresa: infoEmpresa.value
+  var data = {
+    nome: infoNome.Value,
+    email: infoEmail.Value,
+    empresa: infoEmpresa.Value
   }
 
   var ref = database.ref('cadastro');
-  ref.push(data1);
+  ref.push(data);
+  console.log(data); 
 }
 
 window.onload = function() {

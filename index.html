@@ -4,72 +4,100 @@
 	<title>LANDING PAGE</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styleSheet.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
 </head>
 
 <body>
-	<header>
-	<h1>TÍTULO DA PÁGINA</h1>
-	</header>		
-
-		<nav id="menu">
-			<a href="#section1" class="menuItem">CONTEÚDO 1</a>
-			<a href="#section2" class="menuItem">CONTEÚDO 2</a>
-			<a href="#section3" class="menuItem">CONTEÚDO 3</a>
-			<a href="#section4" class="menuItem">CONTEÚDO 4</a>
-		</nav>
-
-	<section id="section1">
-		<header class="titleSection">SECTION 1</header>
-		<div>
-			<p>Lorem ipsum orci venenatis ultricies dui iaculis volutpat egestas in class, dictum class urna molestie sagittis egestas fusce vulputate suscipit, curae ante hac metus morbi tellus ultricies a porta. orci habitasse dui pulvinar sodales consequat ac nisl cras, nibh nulla venenatis tortor donec hac cubilia rutrum proin, potenti nibh libero suscipit sit semper eros. scelerisque nostra lobortis potenti convallis curabitur risus vel primis sagittis fames ullamcorper, pretium metus himenaeos nulla urna lobortis cubilia conubia placerat phasellus quisque mi, tristique ullamcorper eget viverra metus curabitur mollis duis habitant fames. dui torquent tristique per vehicula, bibendum mattis fringilla dictum, convallis morbi amet. </p>
-		</div>		
-	</section>
-
-	<section id="section2">
-		<header class="titleSection">SECTION 2</header>	
-		<div class="row">
-			<div class="col-md-6">
-				<p>Lorem ipsum leo vel dictumst ultricies nisi, sagittis molestie scelerisque porta ad mollis lobortis, pellentesque volutpat consequat tempor nec. leo egestas quis nisl turpis ornare molestie vehicula, nunc nulla ad etiam sociosqu nostra etiam, libero fusce porttitor etiam ornare vivamus. </p>
+	<section>
+		<div class="row" id="start">
+			<div class="col-4"></div>
+			<div class="col-4">
+				<img src="img/logo.png" class="logo">
 			</div>
-			<div class="col-md-6">
-				<img src="img/capivara1.png" class="image1">
-			</div>
+			<div class="col-4"></div>
 		</div>
 	</section>
 
-	<section id="section3">
-		<header class="titleSection">SECTION 3</header>
-			<form id="formCadastro">
-				<div class="row">
-					<div class="col-md-4"></div>
-					<div class="col-md-4">
-						<fieldset>
-							<div class="itensForm">
-								<label for="name">Nome Completo </label>
-								<input id="nome"  name="nome" type="text" maxlength="150" value="" placeholder="Seu nome" required="required" tabindex="1" autofocus="autofocus">
-							</div>
-
-							<div class="itensForm">
-								<label for="email">Email </label>
-								<input id="email" name="email" type="email" " maxlength="150" value="" placeholder="Seu email" required="required" tabindex="2">
-							</div>
-								
-							<div class="itensForm">		
-								<label for="empresa">Empresa </label>
-								<input id="empresa" name="empresa" type="text"  maxlength="150" value="" placeholder="Empresa" required="required" tabindex="3">				
-							</div>
-							<button id="btn_enviaForm" type="button">Enviar</button>
-						</fieldset>
-					</div>
-					<div class="col-md-4"></div>
-					</div>
-				</div>
-			</form>
+	<section>
+		<div id="menu" class="row espacamento">
+			<a href="#section1" class="menuItem">ABOUT US</a>
+			<a href="#section2" class="menuItem">CAPYBARAS</a>
+			<a href="#section3" class="menuItem">HOW TO HELP</a>
+			<a href="#section4" class="menuItem">PARTNERS</a>
+		</div>
 	</section>
 
-	<section id="section4">
-		<header class="titleSection">SECTION 4</header>		
+	<section>
+		<div id="section1" class="row espacamento sectionColor">
+			<h1 class="sectionTitle">ABOUT US</h1>
+			<p class="sectionText">Lorem ipsum orci venenatis ultricies dui iaculis volutpat egestas in class, dictum class urna molestie sagittis egestas fusce vulputate suscipit, curae ante hac metus morbi tellus ultricies a porta. orci habitasse dui pulvinar sodales consequat ac nisl cras, nibh nulla venenatis tortor donec hac cubilia rutrum proin, potenti nibh libero suscipit sit semper eros. scelerisque nostra lobortis potenti convallis curabitur risus vel primis sagittis fames ullamcorper, pretium metus himenaeos nulla urna lobortis cubilia conubia placerat phasellus quisque mi, tristique ullamcorper eget viverra metus curabitur mollis duis habitant fames.
+			<br/>
+			dui torquent tristique per vehicula, bibendum mattis fringilla dictum, convallis morbi amet. scelerisque nostra lobortis potenti convallis curabitur risus vel primis sagittis fames ullamcorper, pretium metus himenaeos nulla urna lobortis cubilia conubia placerat phasellus quisque mi, tristique ullamcorper eget viverra metus curabitur mollis duis habitant fames. dui torquent tristique per vehicula, bibendum mattis fringilla dictum, convallis morbi amet.</p>
+			<!--<a href="#start" class="linkBack"> Voltar</a>-->
+		</div>
+	</section>
+
+	<section>
+		<div id="section2" class="row espacamento">
+			<h1 class="sectionTitle">CAPYBARAS</h1>
+			<div class="col-6">
+				<p class="sectionText">Lorem ipsum leo vel dictumst ultricies nisi, sagittis molestie scelerisque porta ad mollis lobortis, pellentesque volutpat consequat tempor nec. leo egestas quis nisl turpis ornare molestie vehicula, nunc nulla ad etiam sociosqu nostra etiam, libero fusce porttitor etiam ornare vivamus. leo egestas quis nisl turpis ornare molestie vehicula, nunc nulla ad etiam sociosqu nostra etiam, libero fusce porttitor etiam ornare vivamus.</p>
+			</div>
+			<div class="col-5">
+				<img src="img/capivara1.png" class="imagem1">
+			</div>
+			
+		</div>
+	</section>
+
+	<section>
+		<div id="section3" class="row espacamento sectionColor">
+			<h1 class="sectionTitle">HOW TO HELP</h1>	
+			<div class="col-4"></div>
+			<div class="col-4">
+				<form id="formCadastro">
+					<div class="itensForm">
+						<label for="name" class="labelForm">Nome Completo </label>
+					</div>
+					<div class="itensForm">
+						<input id="nome" name="nome" type="text" maxlength="150" value="" placeholder="Seu nome" required="required" tabindex="1">
+					</div>
+
+					<div class="itensForm">
+						<label for="email" >Email </label>
+					</div>
+					<div class="itensForm">
+						<input id="email" name="email" type="email" " maxlength="150" value="" placeholder="Seu email" required="required" tabindex="2">
+					</div>
+						
+					<div class="itensForm">		
+						<label for="empresa" >Empresa </label>
+					</div>
+					<div class="itensForm">
+						<input id="empresa" name="empresa" type="text"  maxlength="150" value="" placeholder="Empresa" required="required" tabindex="3">	
+					</div>
+					<div>
+					<button id="btn_enviaForm" type="button" class="confButton">Enviar</button>
+					</div>
+				</form>	
+			</div>
+			<div class="col-4"></div>
+		</div>
+	</section>
+
+	<section>
+		<div id="section4" class="row espacamento">
+		<h1 class="sectionTitle">PARTNERS</h1>	
+			<div class="col-1"></div>
+			<div class="col-3">	
+				<img src="img/wwf-logo.png" class="partnerLogo">
+			</div>
+			<div class="col-3">			
+				<img src="img/Greenpeace-logo.png" class="partnerLogo">
+			</div>
+			<div class="col-3">
+				<img src="img/SOSmataatlantica-logo.jpg" class="partnerLogo">
+			</div>
+		</div>
 	</section>
 
 </body>
