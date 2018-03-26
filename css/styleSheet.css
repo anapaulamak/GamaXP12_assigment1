@@ -1,8 +1,11 @@
+/*Desktop Style*/
+/*Variaveis de cores*/
 :root{
 	--Verde: #579a62;
 	--Amarelo: #ffefaf ;
 }
 
+/*Grid*/
 .row{
 	float: left;
 	min-width: 100%;
@@ -26,13 +29,20 @@
 	text-align: center;
 	min-height: 1px;
 }
-
-.logo{
-	width: 250px;
+#start{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
-#menu{
+.logo{
+	width: 250px !important;
+	height: 70%;	
+}
+
+.menu{
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 }
 
@@ -60,13 +70,25 @@
 	word-spacing: 1.5px;
 }
 
+.sectionConteudo{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
 .imagem1{
 	width: 500px;
 }
 
+#formCadastro{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+}
+
 .itensForm{
 	text-align: left;
-	padding-bottom: 10px;
 	font-family: Arial;
 	color: var(--Verde);
 	font-size: 1.5em;		
@@ -77,14 +99,11 @@
 	border: none;
 	padding: 15px;
 	border-radius: 10px;
-	width: 50%;
+	width: 100%;
 	font-family: Arial;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
- input{
- 	width: 100%;
- }
 
  .partnerLogo{
  	width: 200px;
@@ -105,3 +124,17 @@
 	font-size: 1.5em;
 	color: grey;
  }
+
+
+/*Mobile Style*/
+@media (max-width: 768px){
+
+	.menu{
+		display: flex;
+	}
+
+	.menuItem{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}

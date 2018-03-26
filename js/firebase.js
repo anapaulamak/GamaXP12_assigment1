@@ -27,9 +27,9 @@ function setup(){
 
 function submitData(){
   var data = {
-    nome: infoNome.Value,
-    email: infoEmail.Value,
-    empresa: infoEmpresa.Value
+    nome: infoNome.value,
+    email: infoEmail.value,
+    empresa: infoEmpresa.value
   }
 
   var ref = database.ref('cadastro');

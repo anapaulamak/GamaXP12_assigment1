@@ -38,8 +38,5 @@ btnEnviaForm.addEventListener("click", function(event){
 
 	if (validaNome(nome) == true && validaEmail(email) == true && validaEmpresa(empresa) == true){
 		alert("Cadastro realizado com sucesso!");
-		form.nome.value = "";
-		form.email.value= "";
-		form.empresa.value= "";
 	}
 })
