@@ -162,4 +162,20 @@
 	#btn_enviaForm{
 		font-size: 1.3em;
 	}
+
+	 .linkBack{
+ 	border: none;
+ 	display: inline-block;
+ 	padding: 20px;
+ 	font-size: 1.1em;
+ 	font-family: Arial;
+	background-color: var(--Verde);
+ 	vertical-align: middle;
+ 	text-decoration: none;
+ 	text-align: center;
+	bottom: 30px;
+	right: 30px;
+	position: fixed;
+ 	color: white;
+ }
 }
