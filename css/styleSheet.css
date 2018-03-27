@@ -102,11 +102,21 @@
  }
 
  .linkBack{
+ 	border: none;
+ 	display: inline-block;
+ 	padding: 20px;
+ 	font-size: 1.1em;
+ 	font-family: Arial;
+	background-color: var(--Verde);
+ 	vertical-align: middle;
  	text-decoration: none;
-	font-family: Arial;
-	font-size: 1.5em;
-	color: grey;
+ 	text-align: center;
+	bottom: 30px;
+	right: 30px;
+	position: fixed;
+ 	color: white;
  }
+
 
 /*Mobile Style*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 700px) {
@@ -128,7 +138,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: initial;
-		justify-content: center;		
+		justify-content: center;	
+		font-size: 1.3em; 	
 	}
 
 	#formCadastro{
@@ -141,9 +152,14 @@
 
 	input{
 		min-height: 50px;
+		font-size: 1.3em;
 	}
 
 	body{
+		font-size: 1.5em;
+	}
+
+	#btn_enviaForm{
 		font-size: 1.3em;
 	}
 }
