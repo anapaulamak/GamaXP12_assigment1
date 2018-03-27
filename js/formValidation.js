@@ -26,17 +26,14 @@ function validaEmpresa(empresa){
 	}
 }
 
-let btnEnviaForm = document.querySelector("#btn_enviaForm");
-btnEnviaForm.addEventListener("click", function(event){
-	
+function validaCadastro (){
 	//pegar informações do formulário
 	let form = document.querySelector("#formCadastro");
-
 	let nome = form.nome.value;
 	let email =	form.email.value;
 	let empresa = form.empresa.value;
 
-	if (validaNome(nome) == true && validaEmail(email) == true && validaEmpresa(empresa) == true){
-		alert("Cadastro realizado com sucesso!");
-	}
-})
+	return (validaNome(nome) && validaEmail(email) && validaEmpresa(empresa))
+}
+
+

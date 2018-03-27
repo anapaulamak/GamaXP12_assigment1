@@ -26,15 +26,24 @@ function setup(){
 };
 
 function submitData(){
-  var data = {
-    nome: infoNome.value,
-    email: infoEmail.value,
-    empresa: infoEmpresa.value
-  }
+  if (validaCadastro() == true){
+    
+    var data = {
+      nome: infoNome.value,
+      email: infoEmail.value,
+      empresa: infoEmpresa.value
+    }
 
-  var ref = database.ref('cadastro');
-  ref.push(data);
-  console.log(data); 
+    var ref = database.ref('cadastro');
+    ref.push(data);
+    console.log(data); 
+    alert("Cadastro realizado com sucesso!");
+
+    infoNome.value = "";
+    infoEmpresa.value = "";
+    infoEmail.value = "";
+
+  }
 }
 
 window.onload = function() {
